@@ -298,23 +298,23 @@ jobs:
 
           # Expired Remote Command Patches - 2025-03-13
           echo "Downloading code to support 15 Minute Remote Passwords"
-           cd Loop
-           git remote add gestrich https://github.com/gestrich/Loop 
-           git fetch gestrich bugfix/2024-08-expired-command-10-19-24
-           git cherry-pick fetch_head;
-           cd ..
-           cd LoopKit
-           git remote add gestrich https://github.com/gestrich/LoopKit
-           git fetch gestrich bugfix/2024-08-expired-command-10-19-24
-           git cherry-pick fetch_head;
-           cd ..
-           cd NightscoutService
-           git remote add gestrich https://github.com/gestrich/NightscoutService
-           git fetch gestrich bugfix/2024-08-expired-command-10-19-24
-           git cherry-pick fetch_head;
-           cd ..
-           git add .; 
-           git commit -m "Added 15 minute remote password patches"
+          cd Loop
+          git remote add gestrich https://github.com/gestrich/Loop 
+          git fetch gestrich bugfix/2024-08-expired-command-10-19-24
+          git cherry-pick fetch_head;
+          cd ..
+          cd LoopKit
+          git remote add gestrich https://github.com/gestrich/LoopKit
+          git fetch gestrich bugfix/2024-08-expired-command-10-19-24
+          git cherry-pick fetch_head;
+          cd ..
+          cd NightscoutService
+          git remote add gestrich https://github.com/gestrich/NightscoutService
+          git fetch gestrich bugfix/2024-08-expired-command-10-19-24
+          git cherry-pick fetch_head;
+          cd ..
+          git add .; 
+          git commit -m "Added 15 minute remote password patches"
          
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
